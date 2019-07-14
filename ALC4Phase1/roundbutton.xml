@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="5dip" />
+            <gradient android:angle="-90" android:startColor="#0066FF" android:endColor="#0051D0"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="5dip" />
+            <stroke android:width="1dip" android:color="#0066FF" />
+            <solid android:color="#0051D0"/>
+        </shape>
+    </item>
+    <item>
+        <layer-list>
+            <!-- Drop Shadow -->
+            <item>
+                <shape android:shape="rectangle" >
+                    <corners android:radius="5dip" />
+                    <solid android:color="#C3C2C2" />
+                </shape>
+            </item>
+            <!-- Button default state -->
+            <item android:bottom="3px">
+                <shape android:shape="rectangle"  >
+                    <corners android:radius="5dip" />
+                    <solid android:color="#FFAE2F" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+</selector>
